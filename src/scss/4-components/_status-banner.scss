@@ -1,0 +1,39 @@
+.status-banner {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  background: rgba(19, 33, 28, 0.94);
+  color: var(--color-surface-strong);
+  box-shadow: var(--shadow-soft);
+
+  @include at-tablet {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+}
+
+.status-banner h2,
+.status-banner p {
+  color: inherit;
+}
+
+.status-banner__copy {
+  max-width: 62ch;
+  opacity: 0.82;
+}
+
+.status-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+}
+
+.status-pill {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-surface-strong);
+}

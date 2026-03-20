@@ -1,0 +1,33 @@
+.forecast-strip {
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  background: rgba(255, 252, 248, 0.78);
+  border: 1px solid rgba(19, 33, 28, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.forecast-strip__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 0.5rem;
+}
+
+.forecast-pill {
+  padding: 0.55rem;
+  border-radius: 0.85rem;
+  background: var(--color-surface-strong);
+  border: 1px solid var(--color-border);
+}
+
+.forecast-pill p,
+.forecast-pill span {
+  margin-bottom: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.forecast-pill strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.05rem;
+  font-family: var(--font-display);
+}

@@ -1,0 +1,45 @@
+.night-card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 252, 248, 0.88);
+  border: 1px solid rgba(19, 33, 28, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.night-card--error {
+  color: #992c18;
+}
+
+.night-card__header {
+  display: grid;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+
+  @include at-tablet {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+  }
+}
+
+.night-card__range {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.night-card__range span:last-child {
+  color: var(--color-accent);
+}
+
+.night-card__summary,
+.night-card__disclaimer {
+  max-width: 70ch;
+}
+
+.night-card__disclaimer {
+  margin-top: var(--space-md);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}

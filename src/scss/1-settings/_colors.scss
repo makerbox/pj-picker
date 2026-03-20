@@ -1,0 +1,22 @@
+$cream: #f7f1e8;
+$sand: #e7d8c6;
+$clay: #d5b89b;
+$terracotta: #b66743;
+$forest: #23352d;
+$ink: #13211c;
+$mist: #fefcf8;
+$white: #ffffff;
+$shadow: rgba(19, 33, 28, 0.14);
+
+:root {
+  --color-bg: #{$cream};
+  --color-surface: #{$mist};
+  --color-surface-strong: #{$white};
+  --color-border: #{$sand};
+  --color-text: #{$ink};
+  --color-muted: rgba(19, 33, 28, 0.72);
+  --color-accent: #{$terracotta};
+  --color-accent-strong: #8f4627;
+  --color-success: #315e4b;
+  --shadow-soft: 0 20px 60px #{$shadow};
+}

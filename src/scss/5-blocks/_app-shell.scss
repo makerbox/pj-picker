@@ -1,0 +1,20 @@
+.app-shell {
+  width: min(1180px, calc(100% - 1.5rem));
+  margin: 0 auto;
+  padding: var(--space-sm) 0 var(--space-lg);
+}
+
+.dashboard {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.utility-row {
+  display: grid;
+  gap: var(--space-lg);
+
+  @include at-tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
