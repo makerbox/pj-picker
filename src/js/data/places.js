@@ -1,7 +1,7 @@
 export const DEFAULT_PLACE = {
-  id: "sydney-au",
-  name: "Sydney",
+  id: "bulli-au",
+  name: "Bulli",
   regionLabel: "NSW, Australia",
-  latitude: -33.8688,
-  longitude: 151.2093
+  latitude: -34.33834,
+  longitude: 150.91347
 };
